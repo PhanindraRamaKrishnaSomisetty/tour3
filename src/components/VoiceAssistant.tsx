@@ -36,7 +36,7 @@ const VoiceAssistant: React.FC<VoiceAssistantProps> = ({ onNavigate, onFilterUpd
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // Initialize Gemini AI (you'll need to add your API key)
-  const genAI = new GoogleGenerativeAI(process.env.REACT_APP_GEMINI_API_KEY || 'your-gemini-api-key');
+  const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY || 'your-gemini-api-key');
   const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
   const { speak, cancel, speaking } = useSpeechSynthesis();
