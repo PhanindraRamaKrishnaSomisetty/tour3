@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mountain, User, Menu, X, Heart, Calendar, Settings, Globe, ShoppingBag, TrendingUp, UtensilsCrossed, Home, HelpCircle } from 'lucide-react';
+import { Mountain, User, Menu, X, Heart, Calendar, Settings, Globe, ShoppingBag, TrendingUp, UtensilsCrossed, Home, HelpCircle, MapPin } from 'lucide-react';
 import { User as UserType } from '../types';
 import { useLanguage } from '../contexts/LanguageContext';
 
