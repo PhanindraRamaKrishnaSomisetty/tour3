@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mountain, User, Menu, X, Heart, Calendar, Settings, Globe, ShoppingBag, TrendingUp, UtensilsCrossed, Home, HelpCircle, MapPin } from 'lucide-react';
+import { Mountain, User, Menu, X, Heart, Calendar, Settings, Globe, ShoppingBag, TrendingUp, UtensilsCrossed, Home, HelpCircle, MapPin, Cloud } from 'lucide-react';
 import { User as UserType } from '../types';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -27,6 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage, user, onLo
     { id: 'stay-info', label: 'Stay Info', icon: Home },
     { id: 'donations', label: 'Donations', icon: Heart },
     { id: 'india-map', label: 'Explore Map', icon: MapPin },
+    { id: 'weather', label: 'Weather', icon: Cloud },
     { id: 'help', label: 'Help Center', icon: HelpCircle },
   ];
 

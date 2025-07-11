@@ -11,6 +11,8 @@ import UserDashboard from './pages/UserDashboard';
 import MarketplacePage from './pages/MarketplacePage';
 import MoneyFlowPage from './pages/MoneyFlowPage';
 import DetailedMoneyFlowPage from './pages/DetailedMoneyFlowPage';
+import EnhancedMoneyFlowPage from './pages/EnhancedMoneyFlowPage';
+import WeatherForecastPage from './pages/WeatherForecastPage';
 import BecomeHostPage from './pages/BecomeHostPage';
 import FoodOrderPage from './pages/FoodOrderPage';
 import StayInfoPage from './pages/StayInfoPage';
@@ -83,9 +85,11 @@ function App() {
       case 'marketplace':
         return <MarketplacePage />;
       case 'money-flow':
-        return <MoneyFlowPage />;
+        return <EnhancedMoneyFlowPage />;
       case 'detailed-money-flow':
         return <DetailedMoneyFlowPage />;
+      case 'weather':
+        return <WeatherForecastPage />;
       case 'become-host':
         return <BecomeHostPage />;
       case 'food-order':
